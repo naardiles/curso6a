@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="hoja de estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuelos</title>
+    <link rel="icon" type="image/x-icon" href="ICONO.jpeg">
+
+</head>
+<body>
+    <header>
+        <img src="ICONO.jpeg" alt="">
+        <h1>Bienvenido a NBMJ viajes</h1>
+        <h1>Ofrecemos confianza y calidad</h1>
+     </header>
+     <nav>
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+          <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+                <li><a class="active" href="NBMJ VIAJES.html">NBMJ VIAJES</a></li>
+                <li><a href="quienes somos.html">Quienes Somos</a></li>
+                <li><a href="VUELOS A PARISS.html">Vuelos</a></li>
+                <li><a class="active" href="alojamiento.html">Alojamientos</a></li>
+                <li><a class="active" href="transporte.html">Transporte</a></li>
+                <li><a class="active" href="recomendaciones .html">Recomendaciones</a></li>
+           
+              
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    <section>
+     <form action="post">
+        <hr>
+       <h2>Vuelos</h2>
+        <table>
+           <tr>
+               <td>Tipo de Pasaje:</td>
+               <td><input type="radio" name="idayvuelta" id="idayvuelta">Ida y Vuelta</td>
+               <td><input type="radio" name="idayvuelta" id="idayvuelta">Ida</td>
+               <td><input type="radio" name="idayvuelta" id="idayvuelta">Vuelta</td>
+           </tr>
+           <tr>
+               <td>Origen:</td>
+               <td><input type="text" id="desde" name="desde" required></td> 
+               <td>Destino:</td>
+               <td><input type="text" id="hasta" name="hasta" required></td>
+           </tr>
+           <tr>
+               <td>Día de Ida:</td>
+               <td><input type="date" name="fecha" id="fecha" required></td>
+               <td>Día de regreso:</td>
+               <td><input type="date" name="reg" id="reg" required></td>
+           </tr>
+           <tr>
+               <td>Hora de salida:</td>
+               <td><input type="time" id="hora" name="hora" required></td>
+           </tr>
+           <tr>
+               <td>Clase:</td>
+               <td><select name="clase" id="clase">
+                <option value="Económica">Económica</option>
+                <option value="Primera Clase">Primera Clase</option>
+            </select></td>
+           </tr>
+           <tr>
+               <td>Personas:</td>
+               <td><input type="number" name="personas" id="personas" min="1" max="10" placeholder="Maximo 10"></td>
+           </tr>
+           <tr>
+               <td>Cantidad de Menores:</td>
+               <td><input type="number" name="menores" id="menores"></td>
+            <td>Cantidad de Mayores:</td>
+            <td><input type="number" name="menores" id="menores"></td>
+        </tr>
+           <tr>
+               <td>Nombre y Apellido</td>
+               <td><input type="text" id="nya" name="nya"></td>
+           </tr>
+           <tr>
+               <td>DNI:</td>
+               <td><input type="number" name="dni" id="dni" placeholder="Sin puntos"></td>
+           </tr>
+           <tr>
+               <td>Mail:</td>
+               <td><input type="email" name="mail" id="mail"></td>
+           </tr>
+           <tr>
+               <td>Forma de Pago:</td>
+               <td><select name="formas_de_pago" id="formas_de_pago">
+                   <option value="Débito">Débito</option>
+                   <option value="Crédito">Crédito</option>
+               </select></td>
+            </tr>
+       </table>
+       <hr> 
+    </footer>
+</form>
+</body>
+</html>
